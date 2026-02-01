@@ -1,0 +1,67 @@
+body{
+    background: linear-gradient(to right,#6B6BFF , #00f5f5);
+    font-family: "Hammersmith One", sans-serif;
+}
+
+
+
+h1{
+    font-size: 60px;
+}
+h2{
+    font-size: 40px;
+}
+
+.Begining{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 25vh;
+}
+
+
+.Introdutcion{
+    background: linear-gradient(to right,#6B6BFF , #00f5f5);
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+    margin: 100px 150px 10px 150px;
+    padding: 50px;
+    border-radius: 50px;
+}
+
+
+
+.Recent_Products{
+    padding-top: 10vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+
+
+
+.Products{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.Product{
+    transition: .5s ease-in-out;
+    margin: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: linear-gradient(to right,#6B6BFF , #00f5f5);
+    padding: 50px;
+    border-radius: 50px 50px 50px 50px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+}
+.Product:hover{
+    transition: .5s ease-in-out;
+    padding: 60px;
+    
+}
