@@ -1,38 +1,56 @@
 body{
-    background: linear-gradient(to right,#6B6BFF , #00f5f5);
-    font-family: "Hammersmith One", sans-serif;
+    margin: 0;
+    background-color: #ffffff;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: x-large;
+}
+
+
+a{
+    text-decoration: none;
+}
+
+
+@keyframes shadow{
+    0%{
+        box-shadow: 1px 1px 30px #00ffff69;
+    }
+    50%{
+        box-shadow: 1px 1px 30px #6b6bff7c;
+    }
+    100%{
+        box-shadow: 1px 1px 30px #00ffff69;   
+    }
+}
+
+@keyframes fadeD{
+    0%{
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+    100%{
+        opacity:1;
+        transform: translateY(0);
+    }
+
+}
+@keyframes fadeL{
+    0%{
+        opacity: 0;
+        transform: translateX(50px);
+    }
+    100%{
+        opacity:1;
+        transform: translateX(0);
+    }
+
 }
 
 
 
-h1{
-    font-size: 60px;
-}
-h2{
-    font-size: 40px;
-}
-
-.Begining{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    padding-top: 25vh;
-}
-
-
-.Introdutcion{
-    background: linear-gradient(to right,#6B6BFF , #00f5f5);
-    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
-    margin: 100px 150px 10px 150px;
-    padding: 50px;
-    border-radius: 50px;
-}
-
-
-
-.Recent_Products{
-    padding-top: 10vh;
+.Beginning{
+    animation: fadeD 2s ease-in-out;
+    margin-top: 100px;
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -40,28 +58,127 @@ h2{
 
 
 
-
-
-.Products{
+.MR_Logo{
+    animation: shadow 5s infinite ease-in-out;
+    transition: all 2s ease-in-out;
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
+    width: min-content;
+    height: min-content;
+    padding: 25px;
+    background-color: #ffffff;
+    box-shadow: 1px 1px 30px #00ffff69;
+    border-radius: 50%;
 }
-.Product{
-    transition: .5s ease-in-out;
-    margin: 25px;
+.MR_Logo:hover{
+    transition: all 2s ease-in-out;
+    box-shadow: 0px 0px 0px #00ffff69;
+}
+
+
+
+
+
+
+.Welcome{
+    animation: fadeL 2s  ease-in-out;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #ffffff;
+    box-shadow: 1px 1px 30px #6b6bff7c;
+    border-radius: 100px;
+    margin: 50px;
+    padding: 50px;
+}
+
+
+
+
+.Projects{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+
+.Project_Panel{
+    transition: all .5s ease-in-out;
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
-    background: linear-gradient(to right,#6B6BFF , #00f5f5);
-    padding: 50px;
-    border-radius: 50px 50px 50px 50px;
-    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+    background-color: #ffffff;
+    box-shadow: 1px 1px 30px #6b6bff7c;
+    border-radius: 50px;
+    width: 350px;
+    height: 150px;
+    margin: 25px;
 }
-.Product:hover{
-    transition: .5s ease-in-out;
-    padding: 60px;
-    
+.Project_Panel:hover{
+    transition: all .5s ease-in-out;
+    margin: 35px;
+}
+
+
+
+.Last_Project{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+    margin: 50px;
+    padding: 50px;
+    background-color: #fff;
+    box-shadow: 1px 1px 30px #6b6bff7c;
+}
+
+.The_Project{
+    transition: all .5s ease-in-out;
+    border-radius: 50px;
+    box-shadow: 1px 1px 60px #6b6bffa0;
+}
+.The_Project:hover{
+    transition: all .5s ease-in-out;
+    box-shadow: 1px 1px 60px #00ffff69;
+}
+
+
+
+.Choose{
+    display: flex;
+    justify-content: center;
+    background-color: #fff;
+    border-radius: 50px;
+    width: 700px;
+    height: 150px;
+    box-shadow:1px 1px 30px #00ffff69 ;
+}
+
+.Social_Media{
+    display: flex;
+    margin-top:  50vh;
+    margin-bottom: 50vh;
+    justify-content: center;
+    width: min-content;
+    height: min-content;
+    border-radius: 50vh;
+    align-items: center;
+    background-color: #fff;
+    box-shadow: 1px 1px 30px #00ffff69;
+}
+
+
+
+.Social_Media_Site{
+    transition: all .5s ease-in-out;
+    margin: 20px;
+    width: 10vh;
+}
+.Social_Media_Site:hover{
+    transition: all .5s ease-in-out;
+    margin: 30px;
 }
