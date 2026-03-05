@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Form</title>
+    <link rel="stylesheet" href="Form.css">
+</head>
+
+
+<body>
+    <div class="Beginning">
+        <div class="MR_Logo">
+            <img src="Assets/MR.svg" alt="" style="width: 200px;">
+        </div>
+    </div>
+    <div >
+
+        <form class="forms" action="https://submit-form.com/qUhEtqWVo">
+            <div class="Container">
+                <label for="name">Personal Info</label>
+                <input type="text" name="name" placeholder="Your Name" required="" />
+                <input type="email" name="email" placeholder="Email" required="" />
+                <input type="number" name="phoneNumber" placeholder="Phone Number" required="" />
+                <input type="text" name="region" placeholder="Region" required="" />
+                <input type="text" name="contactMethod" placeholder="Contact Method(Optional)" required="" />
+            </div>
+            <div class="Container">
+                <label for="name">Project Info</label>
+                <div class="Radios">
+                    <input class="radio" type="radio" name="ProjectType" value="Game" />
+                    <label style="display:flex; align-items: center;">Game</label>
+                    <input class="radio" type="radio" name="ProjectType" value="App" />
+                    <label style="display:flex; align-items: center;">App</label>
+                    <input class="radio" type="radio" name="ProjectType" value="Plugin" />
+                    <label style="display:flex; align-items: center;">Plugin</label>
+                </div>
+
+                <input type="text" name="ProjectName" placeholder="Project Name" required="" />
+                <input type="number" name="budget" placeholder="Budget($)" required="" />
+                <input  type="hidden" name="_redirect" value="redirect.html">
+                <textarea  name="Description" placeholder="Project Description" required="" ></textarea>
+                <button type="submit">Send</button>
+            </div>
+        </form>
+        <script>
+        const form = document.getElementById('myForm');
+        const submitBtn = document.getElementById('submitBtn');
+
+        function checkForm() {
+            const allRequiredFilled = Array.from(form.querySelectorAll('input[required], textarea[required]'))
+            .every(input => input.value.trim() !== '');
+            const radioChecked = form.querySelector('input[type="radio"]:checked');
+            submitBtn.disabled = !(allRequiredFilled && radioChecked);
+        }
+
+        form.addEventListener('input', checkForm);
+        </script>
+    </div>
+    
+</body>
+</html>
