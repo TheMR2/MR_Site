@@ -47,7 +47,22 @@ a{
 }
 
 
-
+.panel{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 1px 1px 30px #00ffff69;
+    padding: 5px;
+}
+.Choose_Panel{
+    display: flex;
+    justify-content: center;
+    background-color: #fff;
+    border-radius: 50px;
+    box-shadow:1px 1px 30px #00ffff69 ;
+    padding: 3px;
+    width: 200px;
+}
 .Beginning{
     animation: fadeD 2s ease-in-out;
     margin-top: 100px;
